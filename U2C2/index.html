@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit-2 C2</title>
+    <style>
+      /* Write your styles here */
+      *{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      #courses{
+        /* border: 1px solid red; */
+        width: 80%;
+        margin: 80px auto;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 125px);
+        gap: 20px;
+      }
+      #courses>div{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: auto;
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px 0px 20px 0px;
+      }
+      #courses>div>img{
+        /* border: 1px solid red; */
+        border-radius: 50%;
+      }
+      #courses>div>div{
+        /* border: 1px solid blue; */
+        box-sizing: border-box;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
+      }
+      h3{
+        margin: 0px;
+        /* border: 1px solid red; */
+      }
+      #courses>div>div>p{
+        /* border: 1px solid red; */
+        color: #626262;
+      }
+      
+      #gray{
+        /* border: 1px solid blue; */
+        width: auto;
+        padding: 50px 0px 20px 0px;
+        background-color: #FAFAFA;
+      }
+      #gray>h1{
+        /* border: 1px solid red; */
+        text-align: center;
+      }
+      #gray>p{
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 14px;
+        color: #6A6A6A;
+      }
+      #teachers{
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 20px;
+        
+      }
+      #teachers>div{
+        /* border: 1px solid blue; */
+        width: auto;
+        text-align: center;
+      }
+      #teachers>div>img{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 300px;
+        margin: 0px;
+      }
+      #teachers>div>img+div{
+        box-sizing: border-box;
+        padding: 0px 5px;
+      }
+      #teachers>div>img+div>h4{
+        /* border: 1px solid blue; */
+        margin: 0px;
+      }
+      #teachers>div>img+div>h4+p{
+        /* border: 1px solid blue; */
+        margin: 0px;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+        color: #F06B2C;
+      }
+      #teachers>div>img+div>p+p{
+        /* border: 1px solid blue; */
+        margin: 10px 0px;
+        color: #848484;
+      }
+      
+      /* keep media queries at that last */
+      /* medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 720px) {
+        #courses{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 125px);
+        }
+        #teachers{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, auto);
+        }
+      }
+
+      /* small screens */
+      @media only screen and (min-width: 0px) and (max-width: 420px) {
+        #courses{
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 125px);
+        }
+        #teachers{
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, auto);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Courses section - top section -->
+    <div id="courses">
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Business School</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Marketing</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Photography</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Social Media</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Development</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/50" alt="">
+        <div>
+          <h3>Design</h3>
+          <p>cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="gray">
+      <h1>Certified Teachers</h1>
+      <p id="description">
+        Separated they live in. A small river named Duden flows by their place and
+        supplies it with the necessary regelialia. It is a paradisematic country
+      </p>
+      <!-- Teachers Section -->
+      <div id="teachers">
+        <div>
+          <img src="https://bloximages.newyork1.vip.townnews.com/tulsaworld.com/content/tncms/assets/v3/editorial/1/14/114b9722-7d39-11eb-a23a-cb123d222d14/60415f422b661.image.jpg?resize=1200%2C1500" alt="">
+          <div>
+            <h4>Bianca Wilson</h4>
+            <p>TEACHER</p>
+            <p>I am  an ambitious workaholic, but apart from that, pretty simple person.</p>
+          </div>
+        </div>
+        <div>
+          <img src="https://www.fairviewer.org/wp-content/uploads/2017/12/1Q02011.jpg" alt="">
+          <div>
+            <h4>Mitch Parker</h4>
+            <p>ENGLISH TEACHER</p>
+            <p>I am  an ambitious workaholic, but apart from that, pretty simple person.</p>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.squarespace-cdn.com/content/v1/5760eea3555986ada683b8fe/1483554035454-NMFZYVKF3QXZQ2UO6DMV/image-asset.jpeg?format=300w" alt="">
+          <div>
+            <h4>Stella Smith</h4>
+            <p>ART TEACHER</p>
+            <p>I am  an ambitious workaholic, but apart from that, pretty simple person.</p>
+          </div>
+        </div>
+        <div>
+          <img src="https://sites.ed.gov/hispanic-initiative/files/2014/09/alexandra_fuentes_pic01-300x289.jpg" alt="">
+          <div>
+            <h4>Monshe Henderson</h4>
+            <p>SCIENCE TEACHER</p>
+            <p>I am  an ambitious workaholic, but apart from that, pretty simple person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

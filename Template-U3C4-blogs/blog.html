@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--DO NOT CHANGE THIS ID's-->
+
+    <div id="container">
+      <div id="sidebar">
+        <!--add your sidebar component here-->
+      </div>
+
+      <div id="main">
+        <!--DO NOT CHANGE THIS ID's-->
+        <!--Show the clicked article in detailed format here ONLY-->
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module">
+
+  
+  import sidebar from "./components/sidebar.js";
+  sidebar()
+
+  let input = document.getElementById("searchbar");
+
+  input.addEventListener("keypress",(e)=>{
+    // console.log(e);
+      if(e.code == "Enter"){
+        
+        localStorage.setItem("search_term",input.value)
+        window.location.href = "search.html";
+      }
+  })
+
+  let article = JSON.parse(localStorage.getItem("article"));
+
+  let appendarticle=()=>{
+      console.log("mai blog append kar rha hu", article)
+      let main = document.getElementById("main");
+      
+      let card = document.createElement("div")
+      card.id = "card";
+
+      let title = document.createElement("div");
+      title.innerText = article.title;
+
+      let des = document.createElement("div");
+      des.innerText = article.description;
+      
+      let imgd = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = article.urlToImage;
+      imgd.id = "imgd"
+      imgd.append(img)
+
+      card.append(title,imgd,des);
+      main.append(card);
+  } 
+  appendarticle()
+</script>
