@@ -81,5 +81,32 @@
       "price": 42645,
       "category": "Grocery"
     }
+  ],
+  "CartData": [
+    {
+      "id": 1,
+      "product_name": "Dell Laptop",
+      "rating": 3.8,
+      "price": 37250,
+      "category": "Electronics",
+      "desc": "Dell XPS eXtreme Performance System is a line of consumer-oriented high-end laptop and desktop computers manufactured by Dell",
+      "reviews": [
+        {
+          "by": "user1",
+          "review": "This unit got what I wanted. Display quality is to be seen to be believed. Keyboard-good. Trackpad-great. Battery Life, great. Number of ports-a pleasant surprise. SSD storage of 512 GB is more than what I required. Yet, Apple MacBook in aluminium stands out, in terms of looks. This LG 14 incher in black will not"
+        },
+        {
+          "by": "user2",
+          "review": "I purchased this machine last week,the display is awesome same as LG OLED panels, very lightweight, fast in response, easy to read and write, touch pad is smooth. "
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "product_name": "Samsung galaxy M51",
+      "rating": 2.7,
+      "price": 37235,
+      "category": "Electronics"
+    }
   ]
 }
