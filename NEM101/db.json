@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "role": "voter",
+      "username": "john",
+      "password": "1234",
+      "age": 15,
+      "id": "2cd6afbf-7036-4de7-9896-09bf10be9f22",
+      "token": "7fef1763-f4ab-48c1-866f-154ad3c6f3e5"
+    },
+    {
+      "name": "Donald Trump",
+      "role": "candidate",
+      "votes": 2,
+      "party": "partyA",
+      "age": 15,
+      "id": "a439f071-d58f-43aa-8d33-4b7b2fa7b7f4"
+    },
+    {
+      "name": "Paro",
+      "role": "candidate",
+      "votes": 1,
+      "party": "partyA",
+      "age": 25,
+      "id": "234ae022-5b0e-4bb0-bfec-ad6a9bd53506"
+    },
+    {
+      "name": "Undertaker",
+      "role": "voter",
+      "username": "under",
+      "password": "12345",
+      "age": 45,
+      "id": "849acab7-a11a-4503-9a03-d343e99b9080"
+    },
+    {
+      "name": "roman",
+      "role": "voter",
+      "username": "roma",
+      "password": "145",
+      "age": 5,
+      "id": "739c6112-60db-48df-a088-e006fcdfeaf6",
+      "token": ""
+    },
+    {
+      "name": "Heroku",
+      "role": "candidate",
+      "votes": 0,
+      "party": "partyB",
+      "age": 25,
+      "id": "234ae022-5b0e-4bb0-bfec-ad6a9bd53506"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.pageContainer {
+    
+    display: flex;
+}
+.pageContainer > div {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.pageContainer > div:hover {
+    border: 1px solid blue;
+}
+.active {
+    border: 1px solid blue;
+    background-color: red;
+}
+.ghost{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.bordered{
+    border:1px solid black
+}

@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+
+}
+*{
+  box-sizing: border-box;
+}
+.nav > div {
+  margin-top: 20px;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 30px auto;
+}
+.checkoutItem span{
+margin-right: 30px;
+}

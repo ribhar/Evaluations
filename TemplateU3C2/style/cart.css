@@ -1,0 +1,16 @@
+#cart{
+    /* margin: 20px auto;
+    width: 90%; */
+    /* border : 1px solid; */
+    /* display: grid; */
+    gap: 20px;
+    /* grid-template-columns: repeat(4, 1fr); */
+  }
+  #cart>div{
+    /* width: 24%; */
+    /* wid */
+    border : 1px solid;
+  }
+  #cart>div>img{
+    width:200px;
+  }
